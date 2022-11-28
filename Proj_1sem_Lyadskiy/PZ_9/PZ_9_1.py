@@ -1,21 +1,20 @@
 # Организовать словарь 10 русско- английских слов, обеспечивающий
 # "перевод" русского слова на английского.
 
-dict = {"hello": "привет",
-        "bye": "пока",
-        "spring": "весна",
-        "world": "мир",
-        "keyboard": "клавиатура",
-        "mouse": "мышь",
-        "package": "пакет",
-        "phone": "телефон",
-        "project": "проект",
-        "main": "главный"
+dict = {"привет": "hello",
+        "пока": "bye",
+        "весна": "spring",
+        "мир": "world",
+        "клавиатура": "keyboard",
+        "мышь": "mouse",
+        "пакет": "package",
+        "телефон": "phone",
+        "проект": "project",
+        "главный": "main"
         }
+
 
 word = input("Введите слово: ")
 
-for key, value in dict.items():
-    if word == value:
-        print(key)
-        break
+if word in dict:
+    print(dict[word])
